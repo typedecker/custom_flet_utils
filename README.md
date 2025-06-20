@@ -3,7 +3,6 @@
 This repo consists of a bunch of useful utility code that I developed over my time working with flet, for ease of use. Some of it's contents include:
 1. A `ResponsiveLayer` class that lets you add responsiveness to your apps. The controls resize automatically, as long as they are used as instructed in the [`ResponsiveLayer` section](https://github.com/typedecker/custom_flet_utils/edit/main/README.md#1-responsivelayer-docs) given below.
 2. A custom control that allows for Absolute Positioning of widgets. It is pretty easy to understand and use, for more information you can [check out the section](https://github.com/typedecker/custom_flet_utils/edit/main/README.md#2-positioned-control-docs) for it down below as well.
-3. [TO BE FINISHED, I might add this once it is fully done] A game engine fully implemented within flet, it might not be the greatest when it comes to performance but it allows for android game development using python!
 
 ---
 <a name="responsive-layer-section"></a>
