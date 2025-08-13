@@ -35,6 +35,10 @@ class ResponsiveLayer() :
         self.rw = lambda width, _min = 0, BASE_WIDTH = self.BASE_WIDTH: result if (result := (self.page_width * (0.00001 + (width / BASE_WIDTH)))) >= _min else _min
         self.rh = lambda height, _min = 0, BASE_HEIGHT = self.BASE_HEIGHT: result if (result := (self.page_height * (0.00001 + (height / BASE_HEIGHT)))) >= _min else _min
         
+        # stretch parameters
+        self.sw = lambda width, _min = 0, BASE_WIDTH = self.BASE_WIDTH: result if (result := (width + (self.page_width - BASE_WIDTH))) >= _min else _min
+        self.sh = lambda height, _min = 0, BASE_HEIGHT = self.BASE_HEIGHT: result if (result := (height + (self.page_height - BASE_HEIGHT))) >= _min else _min
+        
         # Responsive Padding
         self.Padding = lambda left, top, right, bottom: ft.Padding(
             self.rw(left),
